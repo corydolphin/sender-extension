@@ -1,0 +1,15 @@
+<html>
+<script type="text/javascript">
+
+    console.log("Sending link to mobile via contextMenu ");
+    safari.application.addEventListener("send_to_mobile", handleContextMenu, true);
+
+    function handleContextMenu(event) {
+      console.log("Sending link to mobile via contextMenu ");
+      console.log("Sending link to mobile via contextMenu " + event);
+      // var sText = event.linkUrl;
+      window.open('https://sender.corydolphin.com/?link=http://github.com','Installer','width=500,height=300');
+    }
+
+</script>
+</html>
