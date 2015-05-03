@@ -3,6 +3,7 @@ gulp               = require 'gulp'
 rename             = require 'gulp-rename'
 gutil              = require 'gulp-util'
 webpack            = require 'gulp-webpack'
+zip                = require 'gulp-zip'
 named              = require 'vinyl-named'
 { argv }           = require 'yargs'
 { UglifyJsPlugin } = require('webpack').optimize
@@ -65,6 +66,10 @@ gulp.task 'dev', ['build'], ->
 
 
 gulp.task 'build', ['copy', 'webpack'], ->
+  if PRODUCTION
+    gulp.src './dist/Chrome/*'
+      .pipe zip 'Chrome.zip'
+      .pipe gulp.dest 'dist'
 
 gulp.task 'default', ['dev'], ->
 

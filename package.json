@@ -1,20 +1,15 @@
 {
-  "name": "sender-extension",
+  "name": "sendthistome-extension",
   "version": "1.0.0",
-  "description": "MIT (X11) license. See LICENSE.txt",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/corydolphin/sender-extension.git"
+    "url": "https://github.com/corydolphin/sendthistome-extension.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Cory Dolphin",
   "bugs": {
-    "url": "https://github.com/corydolphin/sender-extension/issues"
+    "url": "https://github.com/corydolphin/sendthistome-extension/issues"
   },
-  "homepage": "https://github.com/corydolphin/sender-extension",
+  "homepage": "https://github.com/corydolphin/sendthistome-extension",
   "dependencies": {
     "bower": "^1.4.0",
     "bower-webpack-plugin": "^0.1.6",
@@ -25,8 +20,12 @@
     "gulp-rename": "^1.2.0",
     "gulp-util": "^3.0.4",
     "gulp-webpack": "^1.4.0",
+    "gulp-zip": "^3.0.2",
     "vinyl-named": "^1.1.0",
     "webpack": "^1.7.3",
     "yargs": "^3.8.0"
+  },
+  "scripts": {
+    "start": "gulp build --production"
   }
 }

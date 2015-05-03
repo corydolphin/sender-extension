@@ -1,8 +1,8 @@
 {
-	"name": "SendToMobile",
-	"version": "0.0.5",
+	"name": "SendThisToMe",
+	"version": "0.0.1",
 	"manifest_version": 2,
-	"description": "An extension to send app install links to your mobile phone",
+	"description": "Install an app to your phone with one click.",
 	"background": {
 		"scripts": ["background.js"]
 	},
@@ -13,8 +13,6 @@
 		}
 	],
 	"icons": {
-		"16": "icon16.png",
-	 	"48": "icon48.png",
 		"128": "icon128.png"
 	},
 	"permissions": [
